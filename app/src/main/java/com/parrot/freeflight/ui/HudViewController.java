@@ -355,7 +355,7 @@ public class HudViewController
 	public void setInterfaceOpacity(float opacity)
 	{
 		if (opacity < 0 || opacity > 100.0f) {
-			Log.w(TAG, "Can't set interface opacity. Invalid value: " + opacity);
+			Log.w(TAG, "Can't set interfaces opacity. Invalid value: " + opacity);
 			return;
 		}
 		

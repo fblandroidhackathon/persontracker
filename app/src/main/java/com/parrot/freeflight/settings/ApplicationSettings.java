@@ -189,7 +189,7 @@ public class ApplicationSettings
 
 	
 	/**
-	 * @return Returns interface opacity in percents [0..100]
+	 * @return Returns interfaces opacity in percents [0..100]
 	 */
 	public int getInterfaceOpacity()
 	{
@@ -198,7 +198,7 @@ public class ApplicationSettings
 	
 	
 	/**
-	 * Configures interface opacity
+	 * Configures interfaces opacity
 	 * @param opacity
 	 */
 	public void setInterfaceOpacity(int opacity)

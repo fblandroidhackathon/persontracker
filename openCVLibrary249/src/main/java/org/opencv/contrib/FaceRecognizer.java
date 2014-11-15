@@ -261,7 +261,7 @@ public class FaceRecognizer extends Algorithm {
  * <p>And finally train it on the given dataset (the face images and labels):
  * </code></p>
  *
- * <p>// This is the common interface to train all of the available
+ * <p>// This is the common interfaces to train all of the available
  * cv.FaceRecognizer <code></p>
  *
  * <p>// C++ code:</p>
@@ -313,7 +313,7 @@ public class FaceRecognizer extends Algorithm {
  *
  * <p>Ptr<FaceRecognizer> model = createLBPHFaceRecognizer();</p>
  *
- * <p>// This is the common interface to train all of the available
+ * <p>// This is the common interfaces to train all of the available
  * cv.FaceRecognizer</p>
  *
  * <p>// implementations:</p>

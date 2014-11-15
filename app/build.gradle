@@ -29,3 +29,9 @@ android {
     }
 }
 
+dependencies {
+    compile project(':openCVLibrary249')
+    compile project(':openCVSamplefacedetection')
+}
+
+

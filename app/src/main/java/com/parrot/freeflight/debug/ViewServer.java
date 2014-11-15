@@ -46,7 +46,7 @@ import android.view.ViewDebug;
 /**
  * <p>This class can be used to enable the use of HierarchyViewer inside an
  * application. HierarchyViewer is an Android SDK tool that can be used
- * to inspect and debug the user interface of running applications. For
+ * to inspect and debug the user interfaces of running applications. For
  * security reasons, HierarchyViewer does not work on production builds
  * (for instance phones bought in store.) By using this class, you can
  * make HierarchyViewer work on any device. You must be very careful

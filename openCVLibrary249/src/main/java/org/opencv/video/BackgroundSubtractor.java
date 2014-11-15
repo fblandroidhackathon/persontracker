@@ -27,7 +27,7 @@ import org.opencv.core.Mat;
  *
  * <p>};</p>
  *
- * <p>The class is only used to define the common interface for the whole family of
+ * <p>The class is only used to define the common interfaces for the whole family of
  * background/foreground segmentation algorithms.
  * </code></p>
  *

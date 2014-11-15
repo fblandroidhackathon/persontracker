@@ -275,7 +275,7 @@ public class Calib3d {
  * instead of using <code>patternSize=cvSize(cols,rows)</code> in
  * "findChessboardCorners".</p>
  *
- * @param objectPoints In the new interface it is a vector of vectors of
+ * @param objectPoints In the new interfaces it is a vector of vectors of
  * calibration pattern points in the calibration pattern coordinate space. The
  * outer vector contains as many elements as the number of the pattern views. If
  * the same calibration pattern is shown in each view and it is fully visible,
@@ -286,14 +286,14 @@ public class Calib3d {
  * model to a XY coordinate plane so that Z-coordinate of each input object
  * point is 0.
  *
- * <p>In the old interface all the vectors of object points from different views
+ * <p>In the old interfaces all the vectors of object points from different views
  * are concatenated together.</p>
- * @param imagePoints In the new interface it is a vector of vectors of the
+ * @param imagePoints In the new interfaces it is a vector of vectors of the
  * projections of calibration pattern points. <code>imagePoints.size()</code>
  * and <code>objectPoints.size()</code> and <code>imagePoints[i].size()</code>
  * must be equal to <code>objectPoints[i].size()</code> for each <code>i</code>.
  *
- * <p>In the old interface all the vectors of object points from different views
+ * <p>In the old interfaces all the vectors of object points from different views
  * are concatenated together.</p>
  * @param imageSize Size of the image used only to initialize the intrinsic
  * camera matrix.
@@ -411,7 +411,7 @@ public class Calib3d {
  * instead of using <code>patternSize=cvSize(cols,rows)</code> in
  * "findChessboardCorners".</p>
  *
- * @param objectPoints In the new interface it is a vector of vectors of
+ * @param objectPoints In the new interfaces it is a vector of vectors of
  * calibration pattern points in the calibration pattern coordinate space. The
  * outer vector contains as many elements as the number of the pattern views. If
  * the same calibration pattern is shown in each view and it is fully visible,
@@ -422,14 +422,14 @@ public class Calib3d {
  * model to a XY coordinate plane so that Z-coordinate of each input object
  * point is 0.
  *
- * <p>In the old interface all the vectors of object points from different views
+ * <p>In the old interfaces all the vectors of object points from different views
  * are concatenated together.</p>
- * @param imagePoints In the new interface it is a vector of vectors of the
+ * @param imagePoints In the new interfaces it is a vector of vectors of the
  * projections of calibration pattern points. <code>imagePoints.size()</code>
  * and <code>objectPoints.size()</code> and <code>imagePoints[i].size()</code>
  * must be equal to <code>objectPoints[i].size()</code> for each <code>i</code>.
  *
- * <p>In the old interface all the vectors of object points from different views
+ * <p>In the old interfaces all the vectors of object points from different views
  * are concatenated together.</p>
  * @param imageSize Size of the image used only to initialize the intrinsic
  * camera matrix.
@@ -545,7 +545,7 @@ public class Calib3d {
  * instead of using <code>patternSize=cvSize(cols,rows)</code> in
  * "findChessboardCorners".</p>
  *
- * @param objectPoints In the new interface it is a vector of vectors of
+ * @param objectPoints In the new interfaces it is a vector of vectors of
  * calibration pattern points in the calibration pattern coordinate space. The
  * outer vector contains as many elements as the number of the pattern views. If
  * the same calibration pattern is shown in each view and it is fully visible,
@@ -556,14 +556,14 @@ public class Calib3d {
  * model to a XY coordinate plane so that Z-coordinate of each input object
  * point is 0.
  *
- * <p>In the old interface all the vectors of object points from different views
+ * <p>In the old interfaces all the vectors of object points from different views
  * are concatenated together.</p>
- * @param imagePoints In the new interface it is a vector of vectors of the
+ * @param imagePoints In the new interfaces it is a vector of vectors of the
  * projections of calibration pattern points. <code>imagePoints.size()</code>
  * and <code>objectPoints.size()</code> and <code>imagePoints[i].size()</code>
  * must be equal to <code>objectPoints[i].size()</code> for each <code>i</code>.
  *
- * <p>In the old interface all the vectors of object points from different views
+ * <p>In the old interfaces all the vectors of object points from different views
  * are concatenated together.</p>
  * @param imageSize Size of the image used only to initialize the intrinsic
  * camera matrix.
@@ -1844,10 +1844,10 @@ public class Calib3d {
  * patterns where each object point has z-coordinate =0.</p>
  *
  * @param objectPoints Vector of vectors of the calibration pattern points in
- * the calibration pattern coordinate space. In the old interface all the
+ * the calibration pattern coordinate space. In the old interfaces all the
  * per-view vectors are concatenated. See "calibrateCamera" for details.
  * @param imagePoints Vector of vectors of the projections of the calibration
- * pattern points. In the old interface all the per-view vectors are
+ * pattern points. In the old interfaces all the per-view vectors are
  * concatenated.
  * @param imageSize Image size in pixels used to initialize the principal point.
  * @param aspectRatio If it is zero or negative, both <em>f_x</em> and
@@ -1876,10 +1876,10 @@ public class Calib3d {
  * patterns where each object point has z-coordinate =0.</p>
  *
  * @param objectPoints Vector of vectors of the calibration pattern points in
- * the calibration pattern coordinate space. In the old interface all the
+ * the calibration pattern coordinate space. In the old interfaces all the
  * per-view vectors are concatenated. See "calibrateCamera" for details.
  * @param imagePoints Vector of vectors of the projections of the calibration
- * pattern points. In the old interface all the per-view vectors are
+ * pattern points. In the old interfaces all the per-view vectors are
  * concatenated.
  * @param imageSize Image size in pixels used to initialize the principal point.
  *
@@ -1970,7 +1970,7 @@ public class Calib3d {
  * @param jacobian Optional output 2Nx(10+<numDistCoeffs>) jacobian matrix of
  * derivatives of image points with respect to components of the rotation
  * vector, translation vector, focal lengths, coordinates of the principal point
- * and the distortion coefficients. In the old interface different components of
+ * and the distortion coefficients. In the old interfaces different components of
  * the jacobian are returned via different output parameters.
  * @param aspectRatio Optional "fixed aspect ratio" parameter. If the parameter
  * is not 0, the function assumes that the aspect ratio (*fx/fy*) is fixed and

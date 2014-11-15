@@ -1,4 +1,4 @@
-package org.opencv.samples.facedetect;
+package org.opencv.samples.facedetect.interfaces;
 
 import android.content.Context;
 import android.util.Log;
@@ -9,6 +9,8 @@ import org.opencv.android.OpenCVLoader;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfRect;
 import org.opencv.core.Rect;
+import org.opencv.samples.facedetect.DetectionBasedTracker;
+import org.opencv.samples.facedetect.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -18,7 +20,7 @@ import java.io.InputStream;
 /**
  * Face Detector.
  */
-public final class FaceDetector {
+public final class FaceDetector implements IFaceDetector {
     private static final String TAG = "FaceDetector";
     private DetectionBasedTracker mNativeDetector;
 

@@ -16,6 +16,9 @@ import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.Rect;
 import org.opencv.core.Scalar;
+import org.opencv.samples.facedetect.interfaces.FaceDetector;
+import org.opencv.samples.facedetect.interfaces.IFaceDetector;
+import org.opencv.samples.facedetect.interfaces.IOnLoaded;
 
 public class FdActivity extends Activity implements CvCameraViewListener2 {
 
@@ -40,7 +43,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
     private int                    mAbsoluteFaceSize   = 0;
 
     private CameraBridgeViewBase   mOpenCvCameraView;
-    private FaceDetector mFaceDetector = new FaceDetector();
+    private IFaceDetector mFaceDetector = new FaceDetector();
 
     private BaseLoaderCallback  mLoaderCallback = new BaseLoaderCallback(this) {
         @Override

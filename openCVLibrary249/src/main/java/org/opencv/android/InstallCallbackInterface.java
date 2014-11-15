@@ -1,7 +1,7 @@
 package org.opencv.android;
 
 /**
- * Installation callback interface.
+ * Installation callback interfaces.
  */
 public interface InstallCallbackInterface
 {

@@ -14,11 +14,11 @@ import org.opencv.utils.Converters;
 
 // C++: class javaGenericDescriptorMatcher
 /**
- * <p>Abstract interface for extracting and matching a keypoint descriptor. There
+ * <p>Abstract interfaces for extracting and matching a keypoint descriptor. There
  * are also "DescriptorExtractor" and "DescriptorMatcher" for these purposes but
  * their interfaces are intended for descriptors represented as vectors in a
  * multidimensional space. <code>GenericDescriptorMatcher</code> is a more
- * generic interface for descriptors. <code>DescriptorMatcher</code> and
+ * generic interfaces for descriptors. <code>DescriptorMatcher</code> and
  * <code>GenericDescriptorMatcher</code> have two groups of match methods: for
  * matching keypoints of an image with another image or with an image set.</p>
  *

@@ -166,7 +166,7 @@ import org.opencv.utils.Converters;
  * Algorithm derivative can store all its parameters and then read them back.
  * There is no need to re-implement it each time.
  * </ul>
- * <p>Here is example of SIFT use in your application via Algorithm interface:
+ * <p>Here is example of SIFT use in your application via Algorithm interfaces:
  * <code></p>
  *
  * <p>// C++ code:</p>

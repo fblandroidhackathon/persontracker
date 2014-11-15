@@ -46,7 +46,7 @@ import org.opencv.utils.Converters;
  *
  * <p>};</p>
  *
- * <p>In this interface, a keypoint descriptor can be represented as a </code></p>
+ * <p>In this interfaces, a keypoint descriptor can be represented as a </code></p>
  *
  * <p>dense, fixed-dimension vector of a basic type. Most descriptors follow this
  * pattern as it simplifies computing distances between descriptors. Therefore,

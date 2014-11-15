@@ -60,11 +60,11 @@ import org.opencv.core.Size;
  *
  * <p>Note:</p>
  * <ul>
- *   <li> A basic sample on using the VideoCapture interface can be found at
+ *   <li> A basic sample on using the VideoCapture interfaces can be found at
  * opencv_source_code/samples/cpp/starter_video.cpp
  *   <li> Another basic video processing sample can be found at
  * opencv_source_code/samples/cpp/video_dmtx.cpp
- *   <li> (Python) A basic sample on using the VideoCapture interface can be
+ *   <li> (Python) A basic sample on using the VideoCapture interfaces can be
  * found at opencv_source_code/samples/python2/video.py
  *   <li> (Python) Another basic video processing sample can be found at
  * opencv_source_code/samples/python2/video_dmtx.py

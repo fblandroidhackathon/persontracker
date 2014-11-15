@@ -10,7 +10,7 @@ import org.opencv.core.Mat;
 /**
  * <p>The class implements the Extremely randomized trees algorithm.
  * <code>CvERTrees</code> is inherited from "CvRTrees" and has the same
- * interface, so see description of "CvRTrees" class to get details. To set the
+ * interfaces, so see description of "CvRTrees" class to get details. To set the
  * training parameters of Extremely randomized trees the same class "CvRTParams"
  * is used.</p>
  *

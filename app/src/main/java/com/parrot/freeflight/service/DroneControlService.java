@@ -963,7 +963,7 @@ LocationListener
 				eif.saveAttributes();
 
 			} catch (IOException ioe) {
-				Log.w (TAG, "Error opening exif interface", ioe);
+				Log.w (TAG, "Error opening exif interfaces", ioe);
 			}
 		}
 

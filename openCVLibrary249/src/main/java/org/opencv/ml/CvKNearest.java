@@ -107,7 +107,7 @@ public class CvKNearest extends CvStatModel {
  * <p>For each input vector, the neighbors are sorted by their distances to the
  * vector.</p>
  *
- * <p>In case of C++ interface you can use output pointers to empty matrices and
+ * <p>In case of C++ interfaces you can use output pointers to empty matrices and
  * the function will allocate memory itself.</p>
  *
  * <p>If only a single input vector is passed, all output matrices are optional and

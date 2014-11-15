@@ -173,8 +173,8 @@ public abstract class CameraBridgeViewBase extends SurfaceView implements Surfac
     };
 
     /**
-     * This class interface is abstract representation of single frame from camera for onCameraFrame callback
-     * Attention: Do not use objects, that represents this interface out of onCameraFrame callback!
+     * This class interfaces is abstract representation of single frame from camera for onCameraFrame callback
+     * Attention: Do not use objects, that represents this interfaces out of onCameraFrame callback!
      */
     public interface CvCameraViewFrame {
 

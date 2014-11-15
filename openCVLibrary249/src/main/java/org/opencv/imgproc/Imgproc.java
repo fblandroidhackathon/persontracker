@@ -2158,12 +2158,12 @@ public class Imgproc {
  *
  * @param curve Input vector of a 2D point stored in:
  * <ul>
- *   <li> <code>std.vector</code> or <code>Mat</code> (C++ interface)
- *   <li> <code>Nx2</code> numpy array (Python interface)
- *   <li> <code>CvSeq</code> or <code> </code>CvMat" (C interface)
+ *   <li> <code>std.vector</code> or <code>Mat</code> (C++ interfaces)
+ *   <li> <code>Nx2</code> numpy array (Python interfaces)
+ *   <li> <code>CvSeq</code> or <code> </code>CvMat" (C interfaces)
  * </ul>
  * @param approxCurve Result of the approximation. The type should match the
- * type of the input curve. In case of C interface the approximated curve is
+ * type of the input curve. In case of C interfaces the approximated curve is
  * stored in the memory storage and pointer to it is returned.
  * @param epsilon Parameter specifying the approximation accuracy. This is the
  * maximum distance between the original curve and its approximation.
@@ -3365,14 +3365,14 @@ public class Imgproc {
  * @param convexhull Convex hull obtained using "convexHull" that should contain
  * indices of the contour points that make the hull.
  * @param convexityDefects The output vector of convexity defects. In C++ and
- * the new Python/Java interface each convexity defect is represented as
+ * the new Python/Java interfaces each convexity defect is represented as
  * 4-element integer vector (a.k.a. <code>cv.Vec4i</code>): <code>(start_index,
  * end_index, farthest_pt_index, fixpt_depth)</code>, where indices are 0-based
  * indices in the original contour of the convexity defect beginning, end and
  * the farthest point, and <code>fixpt_depth</code> is fixed-point approximation
  * (with 8 fractional bits) of the distance between the farthest contour point
  * and the hull. That is, to get the floating-point value of the depth will be
- * <code>fixpt_depth/256.0</code>. In C interface convexity defect is
+ * <code>fixpt_depth/256.0</code>. In C interfaces convexity defect is
  * represented by <code>CvConvexityDefect</code> structure - see below.
  *
  * @see <a href="http://docs.opencv.org/modules/imgproc/doc/structural_analysis_and_shape_descriptors.html#convexitydefects">org.opencv.imgproc.Imgproc.convexityDefects</a>
@@ -5692,10 +5692,10 @@ public class Imgproc {
  * with 0's and used for neighbor analysis in the algorithm), therefore the
  * contours touching the image border will be clipped.</p>
  *
- * <p>Note: If you use the new Python interface then the <code>CV_</code> prefix
+ * <p>Note: If you use the new Python interfaces then the <code>CV_</code> prefix
  * has to be omitted in contour retrieval mode and contour approximation method
  * parameters (for example, use <code>cv2.RETR_LIST</code> and <code>cv2.CHAIN_APPROX_NONE</code>
- * parameters). If you use the old Python interface then these parameters have
+ * parameters). If you use the old Python interfaces then these parameters have
  * the <code>CV_</code> prefix (for example, use <code>cv.CV_RETR_LIST</code>
  * and <code>cv.CV_CHAIN_APPROX_NONE</code>).</p>
  *
@@ -5784,10 +5784,10 @@ public class Imgproc {
  * with 0's and used for neighbor analysis in the algorithm), therefore the
  * contours touching the image border will be clipped.</p>
  *
- * <p>Note: If you use the new Python interface then the <code>CV_</code> prefix
+ * <p>Note: If you use the new Python interfaces then the <code>CV_</code> prefix
  * has to be omitted in contour retrieval mode and contour approximation method
  * parameters (for example, use <code>cv2.RETR_LIST</code> and <code>cv2.CHAIN_APPROX_NONE</code>
- * parameters). If you use the old Python interface then these parameters have
+ * parameters). If you use the old Python interfaces then these parameters have
  * the <code>CV_</code> prefix (for example, use <code>cv.CV_RETR_LIST</code>
  * and <code>cv.CV_CHAIN_APPROX_NONE</code>).</p>
  *
@@ -5883,9 +5883,9 @@ public class Imgproc {
  *
  * @param points Input 2D point set, stored in:
  * <ul>
- *   <li> <code>std.vector<></code> or <code>Mat</code> (C++ interface)
- *   <li> <code>CvSeq*</code> or <code>CvMat*</code> (C interface)
- *   <li> Nx2 numpy array (Python interface)
+ *   <li> <code>std.vector<></code> or <code>Mat</code> (C++ interfaces)
+ *   <li> <code>CvSeq*</code> or <code>CvMat*</code> (C interfaces)
+ *   <li> Nx2 numpy array (Python interfaces)
  * </ul>
  *
  * @see <a href="http://docs.opencv.org/modules/imgproc/doc/structural_analysis_and_shape_descriptors.html#fitellipse">org.opencv.imgproc.Imgproc.fitEllipse</a>
@@ -7459,9 +7459,9 @@ public class Imgproc {
  *
  * @param contour Input vector of 2D points, stored in:
  * <ul>
- *   <li> <code>std.vector<></code> or <code>Mat</code> (C++ interface)
- *   <li> <code>CvSeq*</code> or <code>CvMat*</code> (C interface)
- *   <li> Nx2 numpy array (Python interface)
+ *   <li> <code>std.vector<></code> or <code>Mat</code> (C++ interfaces)
+ *   <li> <code>CvSeq*</code> or <code>CvMat*</code> (C interfaces)
+ *   <li> Nx2 numpy array (Python interfaces)
  * </ul>
  *
  * @see <a href="http://docs.opencv.org/modules/imgproc/doc/structural_analysis_and_shape_descriptors.html#iscontourconvex">org.opencv.imgproc.Imgproc.isContourConvex</a>
@@ -7674,9 +7674,9 @@ public class Imgproc {
  *
  * @param points Input vector of 2D points, stored in:
  * <ul>
- *   <li> <code>std.vector<></code> or <code>Mat</code> (C++ interface)
- *   <li> <code>CvSeq*</code> or <code>CvMat*</code> (C interface)
- *   <li> Nx2 numpy array (Python interface)
+ *   <li> <code>std.vector<></code> or <code>Mat</code> (C++ interfaces)
+ *   <li> <code>CvSeq*</code> or <code>CvMat*</code> (C interfaces)
+ *   <li> Nx2 numpy array (Python interfaces)
  * </ul>
  *
  * @see <a href="http://docs.opencv.org/modules/imgproc/doc/structural_analysis_and_shape_descriptors.html#minarearect">org.opencv.imgproc.Imgproc.minAreaRect</a>
@@ -7702,9 +7702,9 @@ public class Imgproc {
  *
  * @param points Input vector of 2D points, stored in:
  * <ul>
- *   <li> <code>std.vector<></code> or <code>Mat</code> (C++ interface)
- *   <li> <code>CvSeq*</code> or <code>CvMat*</code> (C interface)
- *   <li> Nx2 numpy array (Python interface)
+ *   <li> <code>std.vector<></code> or <code>Mat</code> (C++ interfaces)
+ *   <li> <code>CvSeq*</code> or <code>CvMat*</code> (C interfaces)
+ *   <li> Nx2 numpy array (Python interfaces)
  * </ul>
  * @param center Output center of the circle.
  * @param radius Output radius of the circle.

@@ -1,4 +1,4 @@
-package org.opencv.samples.facedetect;
+package org.opencv.samples.facedetect.interfaces;
 
 /**
  * On loaded.
