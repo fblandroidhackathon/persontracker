@@ -1,0 +1,30 @@
+<<<<<<< HEAD
+/project/build/
+
+/project/app/libs/
+/project/app/build/outputs/
+/project/app/build/intermediates/tmp/
+/project/app/build/intermediates/pre-dexed/
+/project/app/build/intermediates/dex/
+/project/app/build/intermediates/classes/
+
+/project/.idea/libraries/
+
+/project/.idea/workspace.xml
+/project/.idea/misc.xml
+
+/project/local.properties
+
+/face-detection1/openCVSamplefacedetection/build/
+
+/face-detection1/openCVLibrary249/build/
+
+/face-detection1/.idea/workspace.xml
+=======
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+>>>>>>> refs/heads/master
