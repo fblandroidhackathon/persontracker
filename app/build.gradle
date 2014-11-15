@@ -12,6 +12,10 @@ android {
         versionName "1.0"
     }
 
+    dependencies {
+        compile 'com.android.support:support-v4:21.0.+'
+    }
+
     buildTypes {
         release {
             runProguard false
