@@ -11,15 +11,21 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    dependencies {
+        compile 'com.android.support:support-v4:21.0.+'
+    }
+
     buildTypes {
         release {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets.main {
+        jni.srcDirs = []
+        jniLibs.srcDir 'src/main/jni'
+    }
 }
 
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':openCVLibrary249')
-}
