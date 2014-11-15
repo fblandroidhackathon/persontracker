@@ -1,39 +1,71 @@
 package fblandroidhack.persontracker;
 
 import android.app.Activity;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.os.IBinder;
+import android.view.View;
+import android.widget.Button;
+
+import com.parrot.freeflight.service.DroneControlService;
 
 
 public class MainActivity extends Activity {
+
+    private DroneControlService droneControlService;
+
+    private Button takeOffBtn;
+    private boolean isFlying = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Bind drone service
+        bindService(new Intent(this, DroneControlService.class), mConnection, Context.BIND_AUTO_CREATE);
+
+        // Load take off button but don't enable until we're connected to drone
+        takeOffBtn = (Button) findViewById(R.id.mTakeOffBtn);
+        takeOffBtn.setEnabled(false);
     }
 
-
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+    protected void onDestroy() {
+        super.onDestroy();
+        unbindService(mConnection);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    private ServiceConnection mConnection = new ServiceConnection() {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            droneControlService = ((DroneControlService.LocalBinder) service).getService();
+            onDroneServiceConnected();
         }
 
-        return super.onOptionsItemSelected(item);
+        public void onServiceDisconnected(ComponentName name)
+        {
+            droneControlService = null;
+        }
+    };
+
+    private void onDroneServiceConnected() {
+        // Enable take off button
+        takeOffBtn.setEnabled(true);
+        takeOffBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isFlying = !isFlying;
+                if (isFlying) {
+                    takeOffBtn.setText(getString(R.string.land));
+                } else {
+                    takeOffBtn.setText(getString(R.string.take_off));
+                }
+                droneControlService.triggerTakeOff();
+            }
+        });
     }
 }
