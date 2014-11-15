@@ -35,3 +35,6 @@
 /openCVLibrary249/openCVLibrary249.iml
 /openCVSamplefacedetection/openCVSamplefacedetection.iml
 *.iml
+
+/.idea/misc.xml
+/app/app.iml
