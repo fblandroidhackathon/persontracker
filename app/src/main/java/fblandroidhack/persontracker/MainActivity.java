@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.IBinder;
 import android.view.View;
 import android.widget.Button;
@@ -13,11 +14,14 @@ import android.widget.Button;
 import com.parrot.freeflight.service.DroneControlService;
 
 
+
 public class MainActivity extends Activity {
 
     private DroneControlService droneControlService;
 
     private Button takeOffBtn;
+    private Button emergencyBtn;
+
     private boolean isFlying = false;
 
     @Override
@@ -30,7 +34,14 @@ public class MainActivity extends Activity {
 
         // Load take off button but don't enable until we're connected to drone
         takeOffBtn = (Button) findViewById(R.id.mTakeOffBtn);
-        takeOffBtn.setEnabled(false);
+
+        emergencyBtn = (Button) findViewById(R.id.mEmergencyBtn);
+        emergencyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View pView) {
+                emergencyShutdown();
+            }
+        });
     }
 
     @Override
@@ -46,15 +57,16 @@ public class MainActivity extends Activity {
             onDroneServiceConnected();
         }
 
-        public void onServiceDisconnected(ComponentName name)
-        {
+        public void onServiceDisconnected(ComponentName name) {
             droneControlService = null;
         }
     };
 
     private void onDroneServiceConnected() {
-        // Enable take off button
+        // Enable buttons
         takeOffBtn.setEnabled(true);
+        emergencyBtn.setEnabled(true);
+
         takeOffBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,5 +79,11 @@ public class MainActivity extends Activity {
                 droneControlService.triggerTakeOff();
             }
         });
+    }
+
+    private void emergencyShutdown() {
+        if (droneControlService != null) {
+            droneControlService.triggerEmergency();
+        }
     }
 }

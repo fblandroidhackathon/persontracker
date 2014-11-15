@@ -167,4 +167,5 @@
     <string name="Please_insert_a_SD_card_in_your_Smartphone">Please insert a SD card in your Smartphone</string>
     <string name="land">Land</string>
     <string name="take_off">Take off!</string>
+    <string name="emergency_shutdown">Emergency Shutdown</string>
 </resources>
