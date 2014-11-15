@@ -1,0 +1,13 @@
+/project/build/
+
+/project/app/libs/
+/project/app/build/outputs/
+/project/app/build/intermediates/tmp/
+/project/app/build/intermediates/pre-dexed/
+/project/app/build/intermediates/dex/
+/project/app/build/intermediates/classes/
+
+/project/.idea/libraries/
+
+/project/.idea/workspace.xml
+/project/.idea/misc.xml
