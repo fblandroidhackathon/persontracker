@@ -19,3 +19,9 @@
 /face-detection1/openCVLibrary249/build/
 
 /face-detection1/.idea/workspace.xml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
