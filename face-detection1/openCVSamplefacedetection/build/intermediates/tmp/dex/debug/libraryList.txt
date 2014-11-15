@@ -1,2 +1,0 @@
-/Users/kungfu_rorykelly/Desktop/DroneHack/face-detection1/openCVSamplefacedetection/build/intermediates/pre-dexed/debug/classes-b9c60386313033d9838a71ef84a7040affd8437d.jar
-/Users/kungfu_rorykelly/Desktop/DroneHack/face-detection1/openCVSamplefacedetection/build/intermediates/classes/debug
