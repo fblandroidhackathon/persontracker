@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId "com.qualcomm.vuforia.samples.VuforiaSamples"
         minSdkVersion 9
-        targetSdkVersion 18
+        targetSdkVersion 19
     }
 
     buildTypes {
