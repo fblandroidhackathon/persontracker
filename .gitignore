@@ -29,3 +29,8 @@
 /openCVLibrary249/build/
 
 /openCVSamplefacedetection/build/
+
+/.idea/
+
+/openCVLibrary249/openCVLibrary249.iml
+/openCVSamplefacedetection/openCVSamplefacedetection.iml
