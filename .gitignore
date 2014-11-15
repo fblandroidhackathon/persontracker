@@ -25,3 +25,5 @@
 /.idea/libraries
 .DS_Store
 /build
+
+/openCVLibrary249/build/
